@@ -100,7 +100,7 @@ div#social{
   justify-content: center;
   align-items: center;
   font-size: 1.6em;
-  gap: 1em;
+  gap: 15px;
   margin-top: 15px;
 }
 
@@ -126,14 +126,14 @@ article{
 
 article h2{
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .video-container{
   position: relative;
   width: 100%;
   margin: auto;
-  aspect-ratio: 16/9;  
+  aspect-ratio: 16 / 9;  
 }
 
 .video-container iframe{
