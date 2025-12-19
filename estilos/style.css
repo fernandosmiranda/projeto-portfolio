@@ -8,7 +8,7 @@
   --fundo-card
 */
 
-@charset "UTF-8";
+
 
 *{
   margin: 0;
@@ -76,7 +76,7 @@ nav#menu a:hover{
 
 main{
   display: grid;
-  grid-template-columns: auto 85vw auto;
+  grid-template-columns: auto 90vw auto;
   gap: 20px;
   margin-top: 20px;
 }
