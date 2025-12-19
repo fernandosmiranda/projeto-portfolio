@@ -75,12 +75,12 @@ section#ficha{
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
-  grid-column: 1;
+  grid-column: 2;
 }
 
 section#ficha img.foto{
   width: 200px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
@@ -135,7 +135,7 @@ article h2{
   position: relative;
   width: 100%;
   margin: auto;
-  aspect-ratio: 16 / 9;  
+  aspect-ratio: 16/9;  
 }
 
 .video-container iframe{
@@ -262,14 +262,29 @@ footer a:hover{
 }
 
 @media screen and (min-width: 768px) {
+
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha{
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhes{
+    grid-column: 3 / 4;
+  }
+
   #skill-container{
     grid-template-columns: 1fr 1fr;
   }
   
   #projeto-container .projeto{
     flex-direction: row-reverse;
-    justify-content: space-between;
-    max-width: 80%;
+    justify-content: space-between;    
   }
 
   #projeto-container .foto{
